@@ -13,6 +13,7 @@ public class powerOfN {
             return base;
         }
         int ans = pow(base,power/2) * pow(base,power/2);
+        if(power % 2 != 0) ans *= base;
         return ans;
         
     }
