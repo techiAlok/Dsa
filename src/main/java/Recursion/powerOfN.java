@@ -9,6 +9,7 @@ public class powerOfN {
         // return base * pow(base,power-1);
 
         //optimize way
+        
         if(power == 1){
             return base;
         }
