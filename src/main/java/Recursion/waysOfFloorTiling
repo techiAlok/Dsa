@@ -1,0 +1,14 @@
+package Recursion;
+
+public class floorTiling {
+    public static int waysOfTililing(int n) {
+        if(n==0 || n==1){
+            return 1;
+        }
+        int ways = waysOfTililing(n-2) + waysOfTililing(n-1);
+        return ways;
+    }
+    public static void main(String[] args) {
+        System.out.println(waysOfTililing(4));
+    }
+}
